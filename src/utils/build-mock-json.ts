@@ -2,6 +2,7 @@ import path from "path";
 import * as fs from "fs";
 import { PayloadWithFileNameType } from "../types/payload";
 import extractFileName from "./extract-file-name";
+import resolvePayload from "./resolve-payload";
 
 export default function buildMockJson(payloads: PayloadWithFileNameType[]) {
   const cwd = process.cwd();
@@ -21,7 +22,10 @@ export default function buildMockJson(payloads: PayloadWithFileNameType[]) {
         console.log(`Folder already exists: ${folderPath}`);
       }
 
-      fs.writeFileSync(filePath, JSON.stringify(item.payload, null, 2));
+      fs.writeFileSync(
+        filePath,
+        JSON.stringify(resolvePayload(item.payload), null, 2)
+      );
       console.log(`File created: ${filePath}`);
     } catch (error) {
       console.error("Error creating folder or file:", error);

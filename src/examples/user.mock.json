@@ -1,6 +1,6 @@
 {
   "type": "list",
-  "count": 50,
+  "count": 10,
   "payload": [
     {
       "name": "username",
@@ -9,6 +9,24 @@
     {
       "name": "age",
       "type": "number"
+    },
+    {
+      "name": "address",
+      "type": "object",
+      "payload": [
+        {
+          "name": "street_number",
+          "type": "number"
+        },
+        {
+          "name": "street_name",
+          "type": "text"
+        },
+        {
+          "name": "city",
+          "type": "text"
+        }
+      ]
     },
     {
       "name": "posts",

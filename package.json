@@ -12,6 +12,7 @@
   "author": "Hossam Sherif",
   "license": "ISC",
   "devDependencies": {
+    "@faker-js/faker": "^9.2.0",
     "@types/node": "^22.9.0",
     "ncp": "^2.0.0",
     "typescript": "^5.6.3"

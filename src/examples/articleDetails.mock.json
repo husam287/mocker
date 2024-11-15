@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "payload": [
+    {
+      "name": "title",
+      "type": "text"
+    },
+    {
+      "name": "id",
+      "type": "number"
+    },
+    {
+      "name": "info",
+      "type": "text"
+    }
+  ]
+}

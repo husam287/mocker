@@ -1,17 +1,5 @@
 import { PayloadType, PayloadTypeEnum } from "../types/payload";
-
-function getValue(payload: PayloadType) {
-  switch (payload.type) {
-    case PayloadTypeEnum.Number:
-      return 28;
-
-    case PayloadTypeEnum.Text:
-      return "Hossam";
-
-    default:
-      return null;
-  }
-}
+import getRandomValue from "./get-random-value";
 
 export default function resolvePayload(payload: PayloadType) {
   const count = payload.count || 1;
@@ -32,7 +20,7 @@ export default function resolvePayload(payload: PayloadType) {
       if (isComplexPayload) {
         payloadItem[object.name] = resolvePayload(object);
       } else {
-        payloadItem[object.name] = getValue(object);
+        payloadItem[object.name] = getRandomValue(object);
       }
     });
 

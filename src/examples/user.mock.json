@@ -1,0 +1,28 @@
+{
+  "type": "list",
+  "count": 50,
+  "payload": [
+    {
+      "name": "username",
+      "type": "text"
+    },
+    {
+      "name": "age",
+      "type": "number"
+    },
+    {
+      "name": "posts",
+      "type": "list",
+      "payload": [
+        {
+          "name": "title",
+          "type": "text"
+        },
+        {
+          "name": "description",
+          "type": "text"
+        }
+      ]
+    }
+  ]
+}

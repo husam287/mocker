@@ -1,0 +1,19 @@
+{
+  "name": "mocker",
+  "version": "1.0.0",
+  "description": "extract a mock data file easily",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "npm run build && node dist/index.js",
+    "init": "npm run build && node dist/init-schema.js",
+    "build": "tsc",
+    "postbuild": "npx ncp ./src/examples dist/examples"
+  },
+  "author": "Hossam Sherif",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "ncp": "^2.0.0",
+    "typescript": "^5.6.3"
+  }
+}

@@ -13,6 +13,7 @@
     {
       "name": "posts",
       "type": "list",
+      "count": 3,
       "payload": [
         {
           "name": "title",

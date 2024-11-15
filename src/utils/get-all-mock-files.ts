@@ -1,7 +1,7 @@
 import * as fs from "fs";
-import { PayloadType } from "../types/payload";
+import { PayloadWithFileNameType } from "../types/payload";
 
-const getAllMockFiles = (dir: string) => {
+export default function getAllMockFiles(dir: string) {
   const allFiles = fs.readdirSync(dir, { recursive: true });
 
   const filesFilter = (item: string | Buffer) => {
@@ -16,12 +16,10 @@ const getAllMockFiles = (dir: string) => {
 
   const mockFiles = allFiles.filter(filesFilter);
 
-  const payloads: PayloadType[] = mockFiles.map((file) => {
+  const payloads: PayloadWithFileNameType[] = mockFiles.map((file) => {
     const result = fs.readFileSync(file, { encoding: "utf-8" });
-    return JSON.parse(result);
+    return { path: file as string, payload: JSON.parse(result) };
   });
 
   return payloads;
-};
-
-export default getAllMockFiles;
+}

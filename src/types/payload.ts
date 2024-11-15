@@ -10,3 +10,8 @@ export interface PayloadType {
   name?: string;
   count?: number;
 }
+
+export interface PayloadWithFileNameType {
+  path: string;
+  payload: PayloadType;
+}

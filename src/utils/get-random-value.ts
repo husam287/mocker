@@ -15,6 +15,9 @@ export default function getRandomValue(payload: PayloadType) {
     case PayloadTypeEnum.Birthdate:
       return faker.date.birthdate();
 
+    case PayloadTypeEnum.UserAvatar:
+      return faker.image.avatar();
+
     default:
       return null;
   }

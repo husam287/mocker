@@ -158,11 +158,12 @@ your-project/
 
 ## Types Enum
 
-| type     | Info                                        |
-| -------- | ------------------------------------------- |
-| list     | array                                       |
-| object   | object                                      |
-| text     | random text                                 |
-| number   | random number                               |
-| date     | random date                                 |
-| birthday | random birthday between 18 years old and 80 |
+| type        | Info                                        |
+| ----------- | ------------------------------------------- |
+| list        | array                                       |
+| object      | object                                      |
+| text        | random text                                 |
+| number      | random number                               |
+| date        | random date                                 |
+| birthday    | random birthday between 18 years old and 80 |
+| user_avatar | random user avatar                          |

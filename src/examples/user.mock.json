@@ -50,6 +50,10 @@
     {
       "name": "birthday",
       "type": "birthdate"
+    },
+    {
+      "name": "photo",
+      "type": "user_avatar"
     }
   ]
 }

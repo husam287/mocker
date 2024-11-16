@@ -6,6 +6,8 @@
   "scripts": {
     "start": "npm run build && node dist/index.js",
     "init": "npm run build && node dist/init-schema.js",
+    "g": "node dist/index.js",
+    "generate": "node dist/index.js",
     "build": "tsc",
     "postbuild": "npx ncp ./src/examples dist/examples"
   },

@@ -10,7 +10,7 @@
     "build": "tsc",
     "postbuild": "npx ncp ./src/examples dist/examples",
     "prepack": "npm run build",
-    "publish": "npm publish --access public"
+    "publish": "npm publish"
   },
   "repository": {
     "type": "git",

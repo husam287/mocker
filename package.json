@@ -9,7 +9,8 @@
     "test:g": "npm run build && node dist/test/generate.js",
     "build": "tsc",
     "postbuild": "npx ncp ./src/examples dist/examples",
-    "prepack": "npm run build"
+    "prepack": "npm run build",
+    "publish": "npm publish --access public"
   },
   "bin": "./dist/bin/mocker.js",
   "author": "Hossam Sherif",

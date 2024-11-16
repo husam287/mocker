@@ -13,7 +13,7 @@
 Install Mocker as a development dependency in your project:
 
 ```bash
-npm install mocker --save-dev
+npm install @husam287/mocker --save-dev
 ```
 
 ## Usage

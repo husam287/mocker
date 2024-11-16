@@ -1,18 +1,14 @@
 import * as fs from "fs";
 import { PayloadWithFileNameType } from "../types/payload";
+import getAllFiles from "./get-all-files";
 
 export default function getAllMockFiles() {
-  const mainDir = process.cwd()
-  const allFiles = fs.readdirSync(mainDir, { recursive: true });
+  const allFiles = getAllFiles();
 
   const filesFilter = (item: string | Buffer) => {
     if (typeof item !== "string") return false;
 
-    return (
-      !item.includes("node_modules") &&
-      !item.includes("dist") &&
-      item.includes(".mock.json")
-    );
+    return item.includes(".mock.json");
   };
 
   const mockFiles = allFiles.filter(filesFilter);

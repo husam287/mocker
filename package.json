@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "extract a mock data file easily",
   "main": "dist/index.js",
+  "types": "dist/types/index.d.ts",
   "scripts": {
     "start": "npm run build && node dist/index.js",
     "init": "npm run build && node dist/init-schema.js",
@@ -12,17 +13,15 @@
     "postbuild": "npx ncp ./src/examples dist/examples",
     "prepack": "npm run build"
   },
-  "bin": {
-    "g": "node dist/index.js",
-    "generate": "node dist/index.js",
-    "init": "node dist/init-schema.js"
-  },
+  "bin": "./dist/bin/mocker.js",
   "author": "Hossam Sherif",
   "license": "ISC",
   "devDependencies": {
-    "@faker-js/faker": "^9.2.0",
     "@types/node": "^22.9.0",
     "ncp": "^2.0.0",
     "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.2.0"
   }
 }

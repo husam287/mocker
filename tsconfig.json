@@ -7,7 +7,8 @@
     "strict": true, // Enable strict type-checking options
     "esModuleInterop": true, // Enable compatibility with ES6 module imports
     "forceConsistentCasingInFileNames": true, // Ensure consistent casing in imports
-    "skipLibCheck": true // Skip type checking of declaration files for faster builds
+    "skipLibCheck": true, // Skip type checking of declaration files for faster builds
+    "declaration": true
   },
   "include": ["src/**/*"], // Include all TypeScript files in the src directory
   "exclude": ["node_modules", "**/*.test.ts", "**/*.spec.ts"] // Exclude node_modules and test files

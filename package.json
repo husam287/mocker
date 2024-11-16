@@ -1,6 +1,6 @@
 {
   "name": "@husam287/mocker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "extract a mock data file easily",
   "main": "dist/index.js",
   "types": "dist/types/index.d.ts",
@@ -11,6 +11,20 @@
     "postbuild": "npx ncp ./src/examples dist/examples",
     "prepack": "npm run build",
     "publish": "npm publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/husam287/mocker"
+  },
+  "keywords": [
+    "mocker",
+    "fake",
+    "data",
+    "generate",
+    "generator"
+  ],
+  "publishConfig": {
+    "access": "public"
   },
   "bin": "./dist/bin/mocker.js",
   "author": "Hossam Sherif",

@@ -158,13 +158,14 @@ your-project/
 
 ## Types Enum
 
-| type        | Info                                        |
-| ----------- | ------------------------------------------- |
-| list        | array                                       |
-| object      | object                                      |
-| text        | random text                                 |
-| number      | random number                               |
-| date        | random date                                 |
-| birthday    | random birthday between 18 years old and 80 |
-| user_avatar | random user avatar                          |
-| phone       | random phone number                         |
+| type              | Info                                                             |
+| ----------------- | ---------------------------------------------------------------- |
+| list              | array                                                            |
+| object            | object                                                           |
+| text              | random text                                                      |
+| number            | random number                                                    |
+| date              | random date                                                      |
+| birthday          | random birthday between 18 years old and 80                      |
+| user_avatar       | random user avatar                                               |
+| phone             | random phone number                                              |
+| egyptian_location | random location ([lng, lat]) within egypt ex: [31.2212, 30.9982] |

@@ -21,6 +21,12 @@ export default function getRandomValue(payload: PayloadType) {
     case PayloadTypeEnum.Phone:
       return faker.phone.number({ style: "international" });
 
+    case PayloadTypeEnum.EgyptianLocation:
+      return [
+        faker.location.longitude({ min: 24, max: 37, precision: 6 }),
+        faker.location.latitude({ min: 22, max: 32, precision: 6 }),
+      ];
+
     default:
       return null;
   }

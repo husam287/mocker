@@ -58,6 +58,10 @@
     {
       "name": "phone_number",
       "type": "phone"
+    },
+    {
+      "name": "location",
+      "type": "egyptian_location"
     }
   ]
 }

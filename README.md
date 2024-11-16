@@ -98,6 +98,7 @@ your-project/
 | [user_avatar](#user-avatar-type)               | random user avatar                                               |
 | [phone](#phone-number-type)                    | random phone number                                              |
 | [egyptian_location](#egyptian-location-type)   | random location ([lng, lat]) within egypt ex: [31.2212, 30.9982] |
+| [image](#image-type)                           | random image with width=500px and height=500px                   |
 
 ## Examples
 
@@ -267,5 +268,19 @@ your-project/
 // Result
 {
   "test": [30.78663, 31.82924] // [lng, lat]
+}
+```
+
+### Image Type
+
+```json
+// Template
+{
+  "name": "test",
+  "type": "image"
+}
+// Result
+{
+  "test": "https://loremflickr.com/500/500"
 }
 ```

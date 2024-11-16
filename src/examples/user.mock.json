@@ -40,6 +40,10 @@
         {
           "name": "description",
           "type": "text"
+        },
+        {
+          "name": "image",
+          "type": "image"
         }
       ]
     },

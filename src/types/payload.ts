@@ -8,6 +8,7 @@ export enum PayloadTypeEnum {
   UserAvatar = "user_avatar",
   Phone = "phone",
   EgyptianLocation = "egyptian_location",
+  Image = "image",
 }
 
 export interface PayloadType {

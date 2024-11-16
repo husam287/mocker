@@ -27,6 +27,9 @@ export default function getRandomValue(payload: PayloadType) {
         faker.location.latitude({ min: 22, max: 32, precision: 6 }),
       ];
 
+    case PayloadTypeEnum.Image:
+      return faker.image.url({ height: 500, width: 500 });
+
     default:
       return null;
   }

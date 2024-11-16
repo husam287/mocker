@@ -85,7 +85,23 @@ your-project/
 | payload | list which has object of name & type   |
 | count   | number of object generated             |
 
-## Complex Nested Template JSON Example
+## Types Enum
+
+| type                                           | Info                                                             |
+| ---------------------------------------------- | ---------------------------------------------------------------- |
+| [list](#complex-nested-template-json-example)  | array                                                            |
+| [object](#single-object-template-json-example) | object                                                           |
+| [text](#text-type)                             | random text                                                      |
+| [number](#number-type)                         | random number                                                    |
+| [date](#date-type)                             | random date                                                      |
+| [birthday](#birthday-type)                     | random birthday between 18 years old and 80                      |
+| [user_avatar](#user-avatar-type)               | random user avatar                                               |
+| [phone](#phone-number-type)                    | random phone number                                              |
+| [egyptian_location](#egyptian-location-type)   | random location ([lng, lat]) within egypt ex: [31.2212, 30.9982] |
+
+## Examples
+
+### Complex Nested Template JSON Example
 
 ```js
 {
@@ -136,7 +152,7 @@ your-project/
 }
 ```
 
-## Single Object Template JSON Example
+### Single Object Template JSON Example
 
 ```js
 {
@@ -156,16 +172,100 @@ your-project/
 }
 ```
 
-## Types Enum
+### Text Type
 
-| type              | Info                                                             |
-| ----------------- | ---------------------------------------------------------------- |
-| list              | array                                                            |
-| object            | object                                                           |
-| text              | random text                                                      |
-| number            | random number                                                    |
-| date              | random date                                                      |
-| birthday          | random birthday between 18 years old and 80                      |
-| user_avatar       | random user avatar                                               |
-| phone             | random phone number                                              |
-| egyptian_location | random location ([lng, lat]) within egypt ex: [31.2212, 30.9982] |
+```json
+// Template
+{
+  "name": "test",
+  "type": "text"
+}
+// Result
+{
+  "test": "Hossam Sherif"
+}
+```
+
+### Number Type
+
+```json
+// Template
+{
+  "name": "test",
+  "type": "number"
+}
+// Result
+{
+  "test": 28
+}
+```
+
+### Date Type
+
+```json
+// Template
+{
+  "name": "test",
+  "type": "date"
+}
+// Result
+{
+  "test": "2022-07-31T01:33:29.567Z"
+}
+```
+
+### Birthday Type
+
+```json
+// Template
+{
+  "name": "test",
+  "type": "birthday"
+}
+// Result
+{
+  "test": "1998-07-28T01:33:29.567Z"
+}
+```
+
+### User Avatar Type
+
+```json
+// Template
+{
+  "name": "test",
+  "type": "user_avatar"
+}
+// Result
+{
+  "test": "https://avatars.githubusercontent.com/u/97165289"
+}
+```
+
+### Phone number Type
+
+```json
+// Template
+{
+  "name": "test",
+  "type": "phone"
+}
+// Result
+{
+  "test": "+15551234567"
+}
+```
+
+### Egyptian Location Type
+
+```json
+// Template
+{
+  "name": "test",
+  "type": "egyptian_location"
+}
+// Result
+{
+  "test": [30.78663, 31.82924] // [lng, lat]
+}
+```

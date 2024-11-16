@@ -18,6 +18,9 @@ export default function getRandomValue(payload: PayloadType) {
     case PayloadTypeEnum.UserAvatar:
       return faker.image.avatar();
 
+    case PayloadTypeEnum.Phone:
+      return faker.phone.number({ style: "international" });
+
     default:
       return null;
   }

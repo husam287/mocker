@@ -167,3 +167,4 @@ your-project/
 | date        | random date                                 |
 | birthday    | random birthday between 18 years old and 80 |
 | user_avatar | random user avatar                          |
+| phone       | random phone number                         |

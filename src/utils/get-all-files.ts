@@ -14,8 +14,8 @@ export default function getAllFiles() {
 
   return filterdFiles.map((item) => {
     if (typeof item !== "string") return item;
-    if (!item.includes("\\\\")) return item;
+    if (!item.includes("\\")) return item;
 
-    return item.split("\\\\").join("/");
+    return item.split("\\").join("/");
   });
 }

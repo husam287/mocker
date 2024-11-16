@@ -42,6 +42,10 @@
           "type": "text"
         }
       ]
+    },
+    {
+      "name": "created_at",
+      "type": "date"
     }
   ]
 }

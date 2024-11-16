@@ -9,6 +9,9 @@ export default function getRandomValue(payload: PayloadType) {
     case PayloadTypeEnum.Text:
       return faker.person.fullName();
 
+    case PayloadTypeEnum.Date:
+      return faker.date.anytime();
+
     default:
       return null;
   }

@@ -3,6 +3,7 @@ export enum PayloadTypeEnum {
   Object = "object",
   Number = "number",
   Text = "text",
+  Date = "date",
 }
 
 export interface PayloadType {

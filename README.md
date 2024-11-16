@@ -160,7 +160,8 @@ your-project/
 
 | type   | Info          |
 | ------ | ------------- |
-| text   | random text   |
-| number | random number |
 | list   | array         |
 | object | object        |
+| text   | random text   |
+| number | random number |
+| date   | random date   |

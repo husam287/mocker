@@ -5,10 +5,8 @@
   "main": "dist/index.js",
   "types": "dist/types/index.d.ts",
   "scripts": {
-    "start": "npm run build && node dist/index.js",
-    "init": "npm run build && node dist/init-schema.js",
-    "g": "node dist/index.js",
-    "generate": "node dist/index.js",
+    "test:init": "npm run build && node dist/test/init.js",
+    "test:g": "npm run build && node dist/test/generate.js",
     "build": "tsc",
     "postbuild": "npx ncp ./src/examples dist/examples",
     "prepack": "npm run build"

@@ -1,8 +1,9 @@
 import * as fs from "fs";
 import { PayloadWithFileNameType } from "../types/payload";
 
-export default function getAllMockFiles(dir: string) {
-  const allFiles = fs.readdirSync(dir, { recursive: true });
+export default function getAllMockFiles() {
+  const mainDir = process.cwd()
+  const allFiles = fs.readdirSync(mainDir, { recursive: true });
 
   const filesFilter = (item: string | Buffer) => {
     if (typeof item !== "string") return false;

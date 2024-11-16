@@ -1,0 +1,3 @@
+import mocker from "..";
+
+mocker();

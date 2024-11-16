@@ -3,15 +3,21 @@ import * as fs from "fs";
 import { PayloadWithFileNameType } from "../types/payload";
 import extractFileName from "./extract-file-name";
 import resolvePayload from "./resolve-payload";
+import checkSrcDirectionExistance from "./check-src-direction-existance";
 
 export default function buildMockJson(payloads: PayloadWithFileNameType[]) {
   const cwd = process.cwd();
+  const hasSrcFolder = checkSrcDirectionExistance();
 
   payloads.forEach((item) => {
     const filename = extractFileName(item.path);
     if (!filename) return;
 
-    const folderPath = path.resolve(cwd, "mock-data");
+    const folderPath = path.resolve(
+      cwd,
+      hasSrcFolder ? "src" : "",
+      "mock-data"
+    );
     const filePath = path.join(folderPath, `${filename}.json`);
 
     try {

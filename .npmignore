@@ -2,3 +2,4 @@ node_modules
 mock-data
 src
 test
+*.tgz

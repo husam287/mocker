@@ -11,6 +11,11 @@
     "build": "tsc",
     "postbuild": "npx ncp ./src/examples dist/examples"
   },
+  "bin": {
+    "g": "node dist/index.js",
+    "generate": "node dist/index.js",
+    "init": "node dist/init-schema.js"
+  },
   "author": "Hossam Sherif",
   "license": "ISC",
   "devDependencies": {

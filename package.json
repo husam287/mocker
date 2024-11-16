@@ -1,6 +1,6 @@
 {
   "name": "@husam287/mocker",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "extract a mock data file easily",
   "main": "dist/index.js",
   "types": "dist/types/index.d.ts",
@@ -9,8 +9,7 @@
     "test:g": "npm run build && node dist/test/generate.js",
     "build": "tsc",
     "postbuild": "npx ncp ./src/examples dist/examples",
-    "prepack": "npm run build",
-    "publish": "npm publish"
+    "prepack": "npm run build"
   },
   "repository": {
     "type": "git",

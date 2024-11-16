@@ -4,6 +4,7 @@ export enum PayloadTypeEnum {
   Number = "number",
   Text = "text",
   Date = "date",
+  Birthdate = "birthdate",
 }
 
 export interface PayloadType {

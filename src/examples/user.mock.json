@@ -46,6 +46,10 @@
     {
       "name": "created_at",
       "type": "date"
+    },
+    {
+      "name": "birthday",
+      "type": "birthdate"
     }
   ]
 }
